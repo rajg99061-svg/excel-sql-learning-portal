@@ -1,0 +1,78 @@
+import { QuizQuestion } from '../types';
+
+export const QUIZ_QUESTIONS: QuizQuestion[] = [
+  {
+    id: 1,
+    category: 'Excel',
+    question: 'Which Excel function returns the position of a value in a range?',
+    options: ['VLOOKUP', 'MATCH', 'INDEX', 'OFFSET'],
+    answer: 1,
+    explanation: 'MATCH returns the relative position of a lookup value in a one-dimensional range.',
+  },
+  {
+    id: 2,
+    category: 'SQL',
+    question: 'Which clause filters results AFTER aggregation?',
+    options: ['WHERE', 'FILTER', 'HAVING', 'GROUP BY'],
+    answer: 2,
+    explanation: 'HAVING filters grouped rows, while WHERE filters individual rows before grouping.',
+  },
+  {
+    id: 3,
+    category: 'Excel',
+    question: 'What does the $ symbol do in a cell reference like $A$1?',
+    options: ['Formats as currency', 'Creates absolute reference', 'Names the cell', 'Links to another sheet'],
+    answer: 1,
+    explanation: '$A$1 is an absolute reference — it won\'t shift when the formula is copied.',
+  },
+  {
+    id: 4,
+    category: 'SQL',
+    question: 'Which window function assigns a unique sequential integer to rows?',
+    options: ['RANK()', 'DENSE_RANK()', 'ROW_NUMBER()', 'NTILE()'],
+    answer: 2,
+    explanation: 'ROW_NUMBER() always assigns unique integers, even to tied values.',
+  },
+  {
+    id: 5,
+    category: 'Excel',
+    question: 'Power Query is used primarily for what purpose?',
+    options: ['Creating charts', 'Running macros', 'ETL and data transformation', 'Formatting cells'],
+    answer: 2,
+    explanation: 'Power Query is Excel\'s ETL tool — Extract, Transform, Load — for shaping data.',
+  },
+  {
+    id: 6,
+    category: 'SQL',
+    question: 'What is the correct order of SQL clauses in a SELECT statement?',
+    options: [
+      'SELECT → WHERE → FROM → GROUP BY → HAVING',
+      'FROM → WHERE → SELECT → GROUP BY → HAVING',
+      'SELECT → FROM → WHERE → GROUP BY → HAVING',
+      'FROM → SELECT → WHERE → HAVING → GROUP BY',
+    ],
+    answer: 2,
+    explanation: 'The logical order is SELECT → FROM → WHERE → GROUP BY → HAVING → ORDER BY.',
+  },
+  {
+    id: 7,
+    category: 'Excel',
+    question: 'Which function combines the functionality of VLOOKUP and HLOOKUP?',
+    options: ['INDEX', 'XLOOKUP', 'INDIRECT', 'CHOOSE'],
+    answer: 1,
+    explanation: 'XLOOKUP (Excel 365+) can search both rows and columns, returning arrays — it replaces both VLOOKUP and HLOOKUP.',
+  },
+  {
+    id: 8,
+    category: 'SQL',
+    question: 'What does a LEFT JOIN return?',
+    options: [
+      'Only matching rows from both tables',
+      'All rows from the right table plus matches',
+      'All rows from the left table plus matching rows from the right',
+      'All rows from both tables regardless of matches',
+    ],
+    answer: 2,
+    explanation: 'LEFT JOIN returns every row from the left table; unmatched right-side columns are NULL.',
+  },
+];
